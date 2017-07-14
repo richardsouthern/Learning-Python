@@ -17,13 +17,10 @@ with open('Lemonade2016.csv', newline='') as csvfile:
         for c in range(8):
             item = Lemonade [r] [c]
             transposed [c] .append(item)
-    j = 0 
-    list =  []
+    
     for i in transposed:
-        list = transposed [j]
-        m =  statistics.mean(list)
-        print(i,m) 
-        j = j + 1
+           print(i,statistics.mean(i),statistics.median(i),statistics.stdev(i)) 
+       
 
 
          
